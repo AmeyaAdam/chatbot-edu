@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TCET Chat Asst</title>
+    <h1 style="text-align:center; color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serifW;">TCET CHAT ASSISTANT</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/botui@0.3.9/build/botui.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/botui@0.3.9/build/botui-theme-default.css" />
+    <style>
+      html, body {
+        /*background-color: #ffffff;*/
+        /*background-image: linear-gradient(-90deg, #fff, #41cca5);*/
+        background-image: url('college.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+      }
+      .botui-container {
+        /*background-color: inherit;*/
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .botui-messages-container {
+      }
+
+      .botui-actions-container {
+        padding: 0px 30px;
+      }
+
+      .botui-message {
+      }
+
+      .botui-message-content.text {
+        background-color: #e8e8e8;
+        color: #595a5a;
+      }
+
+      .botui-message-content.human {
+        background-color: #919292;
+        color: #f7f8f8;
+      }
+
+      .botui-message-content.embed {
+      }
+
+      .botui-message-content-link {
+      }
+
+      .botui-actions-text-input {
+      }
+
+      .botui-actions-text-submit {
+      }
+
+      button.botui-actions-buttons-button {
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="botui-app-container" id="help-bot">
+      <bot-ui></bot-ui>
+    </div>
+    <!-- use Vue version 2.0.5 for HTML embeds | https://github.com/botui/botui/issues/103-->
+     <!-- remove .min from the file name to use in development mode -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/botui@0.3.9/build/botui.min.js"></script>
+    <script src="./bot-script-sam.js"></script>
+  </body>
+</html>
